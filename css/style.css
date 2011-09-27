@@ -252,6 +252,7 @@ sup.required {
 }
 table {
 	margin: 10px 0;
+	width: 100%;
 }
 tr {
 	border-bottom: 1px solid #DDD;
