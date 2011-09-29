@@ -33,6 +33,10 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
+iframe, iframe html, iframe body {
+	overflow-y: auto;
+}
+
 body { margin: 0; font-size: 10px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #333; }
@@ -344,7 +348,7 @@ table img {
 }
 #page_name {
 	background-color: #CCC;
-	margin: 0;
+	margin: 0 0 15px;
 	padding: 8px 15px;
 	font-size: 21px;
 	color: #333;
@@ -353,7 +357,7 @@ table img {
 #page_nav {
 	border-bottom: 1px solid #999;
 	margin: 0 0 15px;
-	padding: 15px 15px 5px;
+	padding: 0 15px 5px;
 }
 #page_nav li {
 	display: inline;
