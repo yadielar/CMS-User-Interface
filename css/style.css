@@ -435,8 +435,8 @@ h2.box_title {
 	float: left;
 	padding-right: 20px;
 }
-.cols_eql .c1 input[type="text"], .cols_eql .c1 textarea {
-	width: 97%;
+.cols_eql .c1 input[type="text"], .cols_eql .c1 textarea, .cols_eql .c1 .ui-selectmenu {
+	width: 97% !important; /* Set to important to override ui-selectmenu */
 }
 .inline_elements p:before, .inline_elements p:after { content: ""; display: table; }
 .inline_elements p:after { clear: both; }
@@ -679,6 +679,7 @@ ul#main_nav li ul li a:hover, ul#main_nav li ul li.active a {
 
 /* Selectmenu Icons */
 .ui-selectmenu {
+	width: 100% !important;
 	margin-bottom: 10px !important;
 }
 .ui-selectmenu, .ui-button {

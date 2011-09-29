@@ -124,7 +124,7 @@ function makeSortable() {
 $(function() {
 	//IMPORTANT: Selectmenus must go before tabs
 	//Make existing SELECTS at page load
-	$(".select").selectmenu({width: "100%", menuWidth: 273});
+	$(".select").selectmenu({menuWidth: 273});
 	//Make existing SELECTS-with-icons at page load
 	makeSelectIcns();
 	//Make SELECTS-with-icons every time a new form is added
@@ -142,3 +142,13 @@ $(function() {
 
 
 
+
+
+/*--- Fancybox ---*/
+$(function() {
+	$(".fancybox").fancybox({
+		'width'				: 700,
+		'height'			: 500,
+		'type'				: 'iframe'
+	});
+});
