@@ -481,6 +481,19 @@ h2.box_title {
 	margin-bottom: 10px;
 	background-color: #F4CECE;
 }
+.editar_borrar_td span {
+	display: block;
+	float: left;
+	margin: 0 10px;
+	width: 16px;
+	height: 16px;
+}
+.editar_borrar_td span a { display: block; }
+.editar_opciones { background: url(../images/icons/pencil.png); }
+.borrar_opciones { background: url(../images/icons/delete.png); }
+
+
+
 
 
 #footer {
@@ -616,9 +629,6 @@ ul#main_nav li ul li a:hover, ul#main_nav li ul li.active a {
  	background: none repeat scroll 0 0 #CEF3DA !important;
  	color: #555555 !important;
 }
-
-
-
 .ui-button.title_button {
   	background: none repeat scroll 0 0 #777 !important;
   	color: #FFF !important;
