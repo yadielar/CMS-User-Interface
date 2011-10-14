@@ -6,17 +6,20 @@
 /*--- Accordion Menu ---*/
 function initMenu() {
   $('#main_nav ul').hide();
-  $('#main_nav li.active').parent().show().parent().addClass("expanded");
+  $('#main_nav li.active').parent().show().parent().addClass("expanded"); //add ".expanded" class when expanded on page load
   $('#main_nav li a').click(
     function() {
       var checkElement = $(this).next();
       if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
         checkElement.slideUp('normal'); //makes ULs collapsible
+        $(".expanded").removeClass("expanded"); //remove ".expanded" class when collapsed
         return false;
         }
       if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
         $('#main_nav ul:visible').slideUp('normal');
         checkElement.slideDown('normal');
+        $(".expanded").removeClass("expanded"); //remove ".expanded" class from previous
+	    checkElement.parent().addClass("expanded"); //add ".expanded" class when expanded
         return false;
         }
       }

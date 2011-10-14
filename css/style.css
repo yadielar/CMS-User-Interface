@@ -524,9 +524,56 @@ h2.box_title {
 
 
 /* Page Specific Styles */
-#pageId {
+#menus_page {
 	
 }
+.menu-widget {
+	
+}
+.menu-widget ul {
+	/*border: 1px solid #CCCCCC;*/
+	margin: 10px 0;
+	min-height: 10px;
+	padding: 0;
+}
+.menu-widget ul ul {
+	margin-left: 20px;
+	min-height: 0;
+}
+.menu-widget ul:hover ul {
+	min-height: 20px;
+	/*border: 1px solid #CCCCCC;*/
+}
+.menu-widget ul:empty {
+	background-color: #CEF3DA;
+}
+.menu-widget ul li {
+	list-style: none;
+}
+.menu-widget ul li.ui-state-highlight {
+	margin: 0 0 10px;
+	padding: 0;
+	min-height: 20px;
+}
+.menu-widget ul li a {
+	display: block;
+	padding: 6px 6px 6px 10px;
+	background-color: #E7E7E7;
+	text-decoration: none;
+	color: #555;
+	cursor: move;
+}
+.menu-widget ul li a:hover { 
+	background-color: #999;
+	color: #FFF;
+}
+/*
+.menu-widget ul li a { background-color: #EEE; }
+.menu-widget ul li li a { background-color: #DDD; }
+.menu-widget ul li li li a { background-color: #CCC; }
+.menu-widget ul li li li li a { background-color: #BBB; }
+.menu-widget ul li li li li li a { background-color: #AAA; }
+*/
 
 
 /* Form Factory Styles */
