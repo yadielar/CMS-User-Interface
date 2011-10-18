@@ -31,7 +31,7 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; /*overflow-y: scroll;*/ -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 iframe, iframe html, iframe body {
 	overflow-y: auto;
@@ -577,6 +577,9 @@ h2.box_title {
 
 
 /* Form Factory Styles */
+.formfac {
+	padding: 10px 0 0;
+}
 .formfac ul {
 	margin: 0;
 	padding: 0;
