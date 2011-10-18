@@ -43,8 +43,9 @@ function formFactory() {
 	
 	// Actions when adding to the list
 	$(".formfac").delegate(".add_form", "click", function(){
-		var currentFormFac = $(this).parents('.formfac');
-		var currentNoFormsTemplate = $(this).parents('.formfac').children('.noforms_template');
+		var currentFormFac = $(this).parents('.formfac'),
+			currentArea = currentFormFac.attr('data-area'), //get current area id
+			currentNoFormsTemplate = $(this).parents('.formfac').children('.noforms_template');
 		// Check to see if the UL exists and if not create it and make it sortable
 		if ( currentFormFac.children('ul.form_list').length < 1 ) {
 			currentFormFac.prepend('<ul class="form_list has-sortable new_sortable"></ul>');
@@ -52,6 +53,10 @@ function formFactory() {
 		}
 		// Add a new form clone to the list
 		var templateCopy = formTemplate.clone();
+		templateCopy.find('select').attr('name', function(i, val) {
+		  // append current area id to select's 'name' attribute
+		  return val + '-' + currentArea + '[]'
+		});
 		currentFormFac.children('ul.form_list').append(templateCopy);
 		// Hide the no-forms template
 		currentNoFormsTemplate.addClass('hidden');
@@ -68,9 +73,9 @@ function formFactory() {
 	
 	// Actions when removing from the list
 	$(".formfac").delegate(".remove_current", "click", function(){
-		var currentForm = $(this).parents('li');
-		var currentFormList = $(this).parents('ul.form_list');
-		var currentNoFormsTemplate = $(this).parents('.formfac').children('.noforms_template');
+		var currentForm = $(this).parents('li'),
+			currentFormList = $(this).parents('ul.form_list'),
+			currentNoFormsTemplate = $(this).parents('.formfac').children('.noforms_template');
 		// Set buttons on dialog
 		$confirmDelete.dialog('option', 'buttons', { 
 		    "Cancel": function() {
