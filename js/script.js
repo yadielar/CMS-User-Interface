@@ -144,6 +144,11 @@ $(function() {
 	$(".radio").buttonset();
 	$(".checkbox").buttonset();
 	$("input:submit, a.button, button", "#main").button();
+	$(".date").datepicker({
+		showOn: "button",
+		buttonImage: "images/icons/calendar.png",
+		dateFormat: 'yy-mm-dd'
+	});
 	//Make existing SORTABLES at page load
 	makeSortable();
 });
