@@ -491,16 +491,6 @@ h2.box_title {
 	margin-bottom: 10px;
 	background-color: #F4CECE;
 }
-.editar_borrar_td span {
-	display: block;
-	float: left;
-	margin: 0 10px;
-	width: 16px;
-	height: 16px;
-}
-.editar_borrar_td span a { display: block; }
-.editar_opciones { background: url(../images/icons/pencil.png); }
-.borrar_opciones { background: url(../images/icons/delete.png); }
 
 
 
