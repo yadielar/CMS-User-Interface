@@ -651,7 +651,7 @@ ul#main_nav li ul li a:hover, ul#main_nav li ul li.active a {
  	color: #FFF !important;
  	border: 1px solid #666 !important;
  	padding: 10px 13px !important;
- 	margin-top: 10px;
+ 	margin-top: 10px !important;
 }
 .ui-button.page_submit.ui-state-hover {
  	background: none repeat scroll 0 0 #555 !important;
@@ -682,15 +682,14 @@ ul#main_nav li ul li a:hover, ul#main_nav li ul li.active a {
 .ui-button.title_button {
   	background: none repeat scroll 0 0 #777 !important;
   	color: #FFF !important;
-  	margin: 0 !important;
-  	font-size: 12px;
-  	font-weight: bold;
-  	text-transform: uppercase;
+  	margin: 0 0 0 10px !important;
+  	font-size: 12px !important;
+  	font-weight: bold !important;
+  	text-transform: uppercase !important;
   	border: none !important;
-  	border-radius: 6px;
-  	position: absolute !important;
-  	right: 12px !important;
-  	top: 8px !important;
+  	border-radius: 6px !important;
+  	
+  	float: right !important;
 }
 .ui-button.title_button.ui-state-hover {
   	background: none repeat scroll 0 0 #666 !important;
