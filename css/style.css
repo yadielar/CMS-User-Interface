@@ -37,7 +37,7 @@ iframe, iframe html, iframe body {
 	overflow-y: auto;
 }
 
-body { margin: 0; font-size: 10px; line-height: 1.231; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #333; }
 
@@ -493,6 +493,23 @@ h2.box_title {
 }
 
 
+
+/* iFrame Styles */
+.frame {
+	background-color: #FFF;
+}
+.frame #main {
+	margin-top: 0;
+}
+.frame #main .container {
+	padding-left: 0;
+}
+.frame #page_name {
+	margin-bottom: 20px;
+}
+.frame .option_box {
+	padding: 0 16px;
+}
 
 
 
